@@ -35,12 +35,12 @@ footer {
    border-top: solid 5px #cbcbcb;
 }
 
-.navbar__links {
+.navbar__links .nav-link {
     color: var(--alo-dark-grey);
     font-weight: bold;
 }
 
-.navbar__links:hover {
+.navbar__links .nav-link:hover {
     text-decoration: underline;
 }
 
@@ -50,6 +50,8 @@ HERO BANNER
 .hero {
    height: 50vh;
    background-color: var(--alo-decorative-grey);
+   display: flex;
+   align-items: center;
 }
 
 .hero__btn {

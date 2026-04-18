@@ -1,4 +1,131 @@
-/* Hero Banner Height */
+* {
+    font-family: "Quicksand", Arial, sans-serif;
+}
+
+:root {
+   --alo-red: #ad102f;
+   --alo-blue-grey: #343744;
+   --alo-soft-black: #222222;
+   --alo-decorative-grey: #e5e5e5;
+   --alo-light-grey: #b9b9b9; 
+   --alo-medium-grey: #999999;
+   --alo-dark-grey: #666666;
+   --alo-off-white: #f2f2f2;
+   --alo-name-grey: #40403f;
+}
+
+/* ===============================
+HEADER, NAVBAR, FOOTER STYLES
+================================ */
+
+.navbar, footer {
+   background-color: var(--alo-decorative-grey);
+   padding: 24px 0;
+}
+
+
+.navbar {
+   border-bottom: solid 5px #cbcbcb;
+}
+
+
+footer {
+   color: var(--alo-medium-grey);
+   text-align: center;
+   border-top: solid 5px #cbcbcb;
+}
+
+.navbar__links {
+    color: var(--alo-dark-grey);
+    font-weight: bold;
+}
+
+.navbar__links:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+HERO BANNER
+================================ */
 .hero {
-  height: 50vh;
+   height: 50vh;
+   background-color: var(--alo-decorative-grey);
+}
+
+.hero__btn {
+    margin-top: 1rem;
+    background-color: var(--alo-red);
+    color: var(--alo-off-white);
+    font-weight: 500;
+    letter-spacing: .0325rem;
+}
+
+.hero__btn:hover {
+    background-color: #8f0d27;
+    color: var(--alo-off-white);
+}
+
+.last-name {
+    font-weight: 400;
+}
+
+
+/* ===============================
+HEADER AND BODY STYLES
+================================ */
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .075rem;
+   
+}
+
+h1 {
+    font-size: 36pt;
+    padding: 1rem;
+    color: var(--alo-name-grey);
+}
+
+h2 {
+    font-size: 28pt;
+    color: var(--alo-red);
+    text-align: center;
+}
+
+h3 {
+    color: var(--alo-blue-grey);
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: center;
+}
+
+p {
+    color: var(--alo-soft-black);
+    line-height: 1.5;
+}
+
+/* ===============================
+MISC.
+================================ */
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--alo-medium-grey);
+    margin-bottom: 2rem;
+}
+
+.grey-bg {
+    background-color: var(--alo-decorative-grey);
+}
+
+.grey-bg__hr {
+    height: 2px;
+    background-color: var(--alo-dark-grey);
+}
+
+.card-css {
+    border: solid 2px var(--alo-light-grey);
+
 }

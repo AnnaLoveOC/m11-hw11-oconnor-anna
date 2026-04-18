@@ -1,13 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Assignment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <!-- ========= Navbar ========= -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+
+      <!-- Logo / Brand (LEFT) -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/alo-icon-web.png" alt="Logo" width="80">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links (RIGHT) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#goals">Goals</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+ <!-- ========= Hero ========= -->
+  <section class="hero d-flex align-items-center text-center bg-light py-5">
+    <div class="container">
+      <h1>Anna Love O'Connor</h1>
+      <p>Graphic Designer with a strong interest in Web Design.</p>
+      <a href="#about" class="btn btn-dark">Learn More</a>
+    </div>
+  </section>
+
+ <!-- ========= About ========= -->
+  <section id="about" class="py-5">
+
+    <div class="container">
+
+      <div class="row">
+        
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>
+            I’m a graphic designer with a growing interest in web design and user experience. 
+            I enjoy creating clean designs and learning how to turn them into functional websites. 
+            Right now, I’m focused on continuing to build my skills and getting more comfortable combining design with how things actually work.
+          </p>
+          <p>
+            I’m also interested in continuing to grow as a designer and expanding my understanding of front end development. 
+            I want to build projects that not only look good but are easy to use and make sense for the user. 
+            As I gain more experience, I’m hoping to create work that reflects both strong design and practical functionality.
+          </p>
+        </div>
+
+
+        <div class="col-md-4 text-end">
+          <img src="assets/img/headshot-color-web-optimized-wide.jpg" class="img-fluid">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+ <!-- ========= Hobbies ========= -->
+  <section id="hobbies" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Hobbies</h2>
+
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="card h-100 p-2">
+            <div class="card-body">
+              <h3 class="card-title">Graphic Design</h3>
+              <p class="card-text">
+                I work on creating layouts, digital graphics, and branding materials for a range of projects. 
+                I enjoy balancing clean design with real-world use, making sure everything not only looks good but 
+                also communicates clearly and works across different formats.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-2">
+            <div class="card-body">
+              <h3 class="card-title">Gaming</h3>
+              <p class="card-text">
+                I enjoy playing Nintendo games, especially Animal Crossing, Mario, and Pokémon. 
+                I like the mix of creativity, exploration, and strategy, whether it’s building and customizing 
+                in Animal Crossing or working through challenges and leveling up in Pokémon.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-4">
+          <div class="card h-100 p-2">
+            <div class="card-body">
+              <h3 class="card-title">Walks & Runs</h3>
+              <p class="card-text">
+                I like going on walks or runs while listening to music. 
+                It’s a good way for me to clear my head, relieve stress, and get some energy out while still enjoying time outside. 
+                It also helps me reset, feel more focused, and end the day on a better note, especially after a long or busy day.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ========= Goals ========= -->
+  <section class="container my-5">
+    <div class="row">
+
+      <section class="col-4">
+        <img src="assets/img/AdobeStock_310468494.jpeg" class="img-fluid" alt="Image of a graphic designer's desk workspace">
+      </section>
+      
+      <section class="col-8">
+        <h2>Goals</h2>
+        <p>
+          I’m working on improving my skills in both design and development, and I want to keep building projects that feel clean, creative, and easy to use.
+        </p>
+
+        <ol class="ps-3">
+          <li>Get more comfortable with coding and front end development</li>
+          <li>Build websites that are both creative and easy to use</li>
+          <li>Continue growing as a designer who understands how design and development work together</li>
+        </ul>
+      </section>
+
+    </div>
+  </section>
+
+
+ <!-- ========= Footer ========= -->
+  <footer class="bg-light mt-5 py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-8 text-center">
+          <p class="mb-1">© 2026</p>
+          <p class="mb-0">Anna Love O'Connor</p>
+        </div>
+
+      </div>
+    </div>
+</footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

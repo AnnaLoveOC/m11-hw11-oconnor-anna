@@ -48,10 +48,10 @@ footer {
 HERO BANNER
 ================================ */
 .hero {
-   height: 50vh;
-   background-color: var(--alo-decorative-grey);
-   display: flex;
-   align-items: center;
+    height: 50vh;
+    background-color: var(--alo-decorative-grey);
+    display: flex;
+    align-items: center;
 }
 
 .hero__btn {
@@ -79,8 +79,7 @@ HEADER AND BODY STYLES
 h1, h2 {
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: .075rem;
-   
+    letter-spacing: .075rem; 
 }
 
 h1 {
@@ -129,5 +128,4 @@ hr {
 
 .card-css {
     border: solid 2px var(--alo-light-grey);
-
 }
